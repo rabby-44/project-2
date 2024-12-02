@@ -1,0 +1,221 @@
+/* Main navbar start------- */
+.maindiv0{
+     
+    padding-bottom: 7%;
+}
+ 
+.maintext{
+     
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 1%;
+     
+}
+.navh1{
+    font-size: 22px;
+    padding-bottom: 3%;
+}
+
+.inputtext{
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 22px;
+}
+.input2{
+    border: 1px solid  #FF444A;
+    border-radius: 5px;
+    background-color: #FF444A;
+    color: white;
+    cursor: pointer;
+    height: 25px;
+}
+.input2:hover{
+    background-color: #d86c70;
+}
+.navMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+     
+    margin-top: 30px;
+}
+
+/* Main navbar end------- */
+
+/* Item and button start----- */
+.itemandbutton {
+    display: flex;
+    align-items: end;
+    margin: 0 auto;
+    padding-left: 40%;
+    width: 60%;
+     
+}
+
+/* Item and button end------- */
+
+ 
+
+/* Nav item start ------ */
+.navitem {
+    display: flex;
+    list-style: none;
+    gap: 10%;
+    text-align: right; 
+    margin: 0 auto;
+    padding: 0;
+    
+    width: 70%;
+    font-size: 13px; 
+    justify-content: space-evenly;
+}
+
+.navitem > li:hover {
+    cursor: pointer;
+    color:  #FF444A;
+}
+
+/* Nav item end */
+
+@media screen and (max-width: 768px) {
+    .itemandbutton {
+        padding-left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Item and button end------- */
+
+/* Nav item start ------ */
+.navitem {
+    display: flex;
+    list-style: none;
+    gap: 10%;
+    text-align: right;
+    margin: 0 auto;
+    padding: 0;
+    width: 70%;
+    font-size: 13px;
+    justify-content: space-evenly;
+}
+
+.navitem > li:hover {
+    cursor: pointer;
+    color: #FF444A;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navitem {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .navMain {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .maintext {
+        width: 80%;
+        font-size: 16px;
+        text-align: center;
+
+    }
+
+    .navh1 {
+        font-size: 18px;
+    }
+
+    .input2 {
+        width: 100%;
+        height: 30px;
+        margin-top: 15px;
+    }
+
+    .inputtext {
+        width: 100%;
+    }
+}
+/* nav bar total end-------- */
+
+/* card div start */
+
+
+
+.carddiv{
+    display: grid;
+    padding:1%;
+   margin: 0 auto;
+   grid-template-columns: repeat(4,1fr);
+  gap: 3%;
+  width: 80%;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  padding-bottom: 3%; 
+  height: auto;
+  margin-top: 40px;
+   
+ }
+ /* this is card setion------- */
+ .card{
+    border-radius: 6px;
+   margin: 0 auto;
+    background-color: #A7216226;
+     
+     
+     
+    
+     
+     
+ }
+ 
+ /* this is a card section end */
+ .cdiv{
+    margin-top: -16px;
+ }
+ .cardp1{
+    font-size: 12px;
+    padding: 2%;
+ }
+
+ /* Responsive design for smaller screens */
+@media screen and (max-width: 1024px) {
+    .carddiv {
+        grid-template-columns: repeat(4, 1fr); /* 3 columns for medium screens */
+        width: 90%; /* Adjust width */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carddiv {
+        grid-template-columns: repeat(4, 1fr); /* 2 columns for small screens */
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carddiv {
+        grid-template-columns:1fr 1fr; /* 1 column for very small screens */
+        width: 100%;
+    }
+
+    .cardp1 {
+        font-size: 14px; /* Slightly larger text for better readability */
+    }
+}
